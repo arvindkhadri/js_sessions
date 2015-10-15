@@ -62,3 +62,4 @@
 	- http://backbonejs.org/docs/todos.html
 	- http://backbonejs.org
 	- http://underscorejs.org
+	- https://github.com/arvindkhadri/js_sessions
