@@ -1,0 +1,64 @@
+#+TITLE: Presentation about Backbonejs
+#+AUTHOR: Arvind
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation]
+#+BEAMER_FRAME_LEVEL: 2
+#+BEAMER_THEME: default
+#+BEAMER_FONT_THEME: default
+#+BEAMER_COLOR_THEME: dove
+#+OPTIONS: H:1 num:t toc:nil
+#+OPTIONS: TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+DESCRIPTION:
+#+KEYWORDS:
+#+SUBTITLE:
+#+DATE: \today
+
+* Introduction
+** Issues with dynamic web applications
+	 - A DOM element bound to data
+	 - Updating DOM when data changes
+	 - Solution is to have an abstraction between data and DOM
+
+** Backbone.js is a MVC library
+	 - A library, not a framework
+	 - Model, View, Collection
+	 - C is for @Collections@, not Controller!
+	 - Preconfigured to sync with a RESTful API.
+	 - Build single page apps
+
+* Diving into Models, Views, Controller
+:PROPERTIES:
+:BEAMER_opt: shrink=10
+:END:
+** Models
+	 - Reprsent data as individual objects
+	 - Functions to operate on data
+	 - Trigger /change/ events when data changes
+	 - Sync data with a database using a REST API
+
+** Views
+	 - Atomic chunck of user interface.
+	 - A View can be bound to a specific Model or a number of Models, aka
+     Collections
+	 - Views listen to model's change event and then can re-render or re-order
+     themselves.
+
+** Collections
+	 - Deal with a group of related models
+	 - Save or load a set of models from server
+	 - Perform aggregations or computations against models
+	 - Listen to models events at one place
+
+* Web needs @URL@ to work
+** Router
+	 - Web applications rely on URL for representing an important location in an
+     application.
+	 - Backbone allows to map URL fragments to certain functions.
+
+* Related links
+	- http://backbonejs.org/docs/todos.html
+	- http://backbonejs.org
+	- http://underscorejs.org
